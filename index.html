@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Alarm System</title>
+    <link href="assets/styles/styles.css" rel="stylesheet">
+</head>
+<body class="bg-light-gray">
+    <header class="header">
+        <nav class="nav">
+            <h1>Fire Alarm System</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="device.html" id="device-button">Device</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="text-center">
+            <h2>Real-Time Monitoring</h2>
+            <p>Monitor your environment's safety with live data updates.</p>
+        </section>
+
+        <!-- Thermometer, Humidity, Smoke Section -->
+        <section class="grid">
+            <div class="card">
+                <img src="assets/images/thermometer.png" alt="Temperature" class="icon">
+                <h3>Room Temp.</h3>
+                <p id="temp-value">28.5°C</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/humidity.png" alt="Humidity" class="icon">
+                <h3>Humidity</h3>
+                <p id="humidity-value">88%</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/smoke.png" alt="Smoke/Gas" class="icon">
+                <h3>Smoke/Gas</h3>
+                <p id="smoke-value">200 ppm</p>
+            </div>
+        </section>
+
+        <div class="center">
+            <button id="alarm-control" class="alarm-button">
+                Toggle Alarm
+            </button>
+        </div>
+        <div id="alarm-bulb" class="bulb"></div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
